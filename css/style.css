@@ -5,6 +5,12 @@
   AIR SUPERIORITY BLUE - #759EB8
   AIR SUPERIORITY BLUE2 - #7392B7
 */
+
+/* DO ZROBIENIA
+- .patryk- i .pl ma znikać (używając rgba i zmieniając alfa na 0.0)
+- kiedrowski zrobi się niebieskie
+*/
+
 body
 {
   font-family: 'Ubuntu', sans-serif;
@@ -54,6 +60,11 @@ body
 .navbar-default .navbar-nav>li>a:hover::before
 {
   width: 100%;
+}
+
+.blue-hover
+{
+  color: #161925;
 }
 
 .navbar-default .navbar-brand
