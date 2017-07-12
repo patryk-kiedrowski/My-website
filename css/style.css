@@ -40,7 +40,7 @@ body
 
 .navbar-default .navbar-nav>li>a:hover
 {
-  color: #7392B7;
+  color: #3C91E6;
   animation: color-change 0.2s;
 }
 
@@ -50,7 +50,7 @@ body
   display: block;
   height: 2px;
   width: 0%;
-  background-color: #7392B7;
+  background-color: #3C91E6;
   margin-top: -15px;
   margin-bottom: 13px;
 
@@ -74,8 +74,14 @@ body
 
 .navbar-default .navbar-brand:hover
 {
-  color: #7392B7;
-  animation: color-change 0.2s;
+  color: rgba(255, 255, 255, 0);
+  animation: brand-color-change 1s;
+}
+
+.navbar-default .navbar-brand:hover .blue-hover
+{
+  color: #3C91E6;
+  animation: color-change 1s;
 }
 
 .nav
@@ -89,5 +95,11 @@ body
 @keyframes color-change
 {
     0% { color: #161925; }
-    100% { color: #7392B7 }
+    100% { color: #3C91E6; }
+}
+
+@keyframes brand-color-change
+{
+  0% { color: #161925; }
+  100% { color: rgba(255, 255, 255, 0); }
 }
