@@ -1,1 +1,82 @@
-﻿
+﻿/* COLOR SCHEME - LIGHT-SILVER HUES
+  GAINSBORO - #D8E1E9
+  COLUMBIA BLUE - #C5D5EA
+  LIGHT STEEL BLUE - #B3C5D7
+  AIR SUPERIORITY BLUE - #759EB8
+  AIR SUPERIORITY BLUE2 - #7392B7
+*/
+body
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.navbar-container
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1180px;
+}
+
+.navbar-default
+{
+  background-color: #F2F4FF;
+  background-image: url("../img/brushedsteel.jpg");
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 2px 5px grey;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+  color: #161925;
+}
+
+.navbar-default .navbar-nav>li>a:hover
+{
+  color: #7392B7;
+  animation: color-change 0.2s;
+}
+
+.navbar-default .navbar-nav>li>a::before
+{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #7392B7;
+  margin-top: -15px;
+  margin-bottom: 13px;
+
+  transition: ease-in-out 0.2s;
+}
+
+.navbar-default .navbar-nav>li>a:hover::before
+{
+  width: 100%;
+}
+
+.navbar-default .navbar-brand
+{
+  color: #161925;
+}
+
+.navbar-default .navbar-brand:hover
+{
+  color: #7392B7;
+  animation: color-change 0.2s;
+}
+
+.nav
+{
+  float: right;
+  text-transform: lowercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+@keyframes color-change
+{
+    0% { color: #161925; }
+    100% { color: #7392B7 }
+}
