@@ -1,9 +1,9 @@
 ﻿/* COLOR SCHEME - LIGHT-SILVER HUES
-  GAINSBORO - #D8E1E9
-  COLUMBIA BLUE - #C5D5EA
-  LIGHT STEEL BLUE - #B3C5D7
-  AIR SUPERIORITY BLUE - #759EB8
-  AIR SUPERIORITY BLUE2 - #7392B7
+  JET - #342E37
+  BLEU DE FRANCE - #3C91E6
+  JUNE BUD - #9FD356
+  CORAL - #FA824C
+  WHITE - #FAFFFD
 */
 
 /* DO ZROBIENIA
@@ -13,9 +13,15 @@
 
 body
 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  background-image: url("../img/code-background3.png");
+}
+
+#container
+{
+  background-color: #9FD356;
+  background-image: url("../img/background-pattern.png");
+  height: 900px;
 }
 
 .container-fluid
@@ -25,21 +31,20 @@ body
 
 .navbar-default
 {
-  background-color: #F2F4FF;
-  background-image: url("../img/brushedsteel3.jpg");
+  background-color: #342E37;
   border: none;
   border-radius: 0;
-  box-shadow: 0px 2px 5px grey;
+  box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
 }
 
 .navbar-default .navbar-nav>li>a
 {
-  color: #878C8F;
+  color: #FAFFFD;
 }
 
 .navbar-default .navbar-nav>li>a:hover
 {
-  color: #3C91E6;
+  color: #FA824C;
   animation: color-change 0.2s;
 }
 
@@ -49,10 +54,9 @@ body
   display: block;
   height: 2px;
   width: 0%;
-  background-color: #3C91E6;
+  background-color: #FA824C;
   margin-top: -15px;
   margin-bottom: 13px;
-  opacity: 0.4;
 
   transition: ease-in-out 0.2s;
 }
@@ -64,12 +68,12 @@ body
 
 .blue-hover
 {
-  color: #878C8F;
+  color: #FAFFFD;
 }
 
 .navbar-default .navbar-brand
 {
-  color: #878C8F;
+  color: #FAFFFD;
 }
 
 .navbar-default .navbar-brand:hover
@@ -80,7 +84,7 @@ body
 
 .navbar-default .navbar-brand:hover .blue-hover
 {
-  color: #3C91E6;
+  color: #FA824C;
   animation: color-change 1s;
 }
 
@@ -92,15 +96,96 @@ body
   letter-spacing: 2px;
 }
 
+
+#container>.row
+{
+  margin-top: 50px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1180px;
+  min-height: 660px;
+}
+
+.introduction-item
+{
+  background-color: #342E37;
+  margin-left: 40px;
+  width: 366.66px;
+  height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.introduction-item:nth-child(1)
+{
+  margin-left: 0px;
+}
+
+.introduction-header
+{
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FAFFFD;
+  margin: 0;
+  line-height: 50px;
+}
+
+.introduction-content
+{
+  height: 400px;
+  background-color: #FAFFFD;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.int-un-list
+{
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  list-style-type: none;
+}
+
+.introduction-list
+{
+  letter-spacing: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  text-align: center;
+  color: #342E37;
+}
+
+.introduction-list:nth-child(1)
+{
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.list-separator
+{
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
 @keyframes color-change
 {
-    0% { color: #878C8F; }
-    100% { color: #3C91E6; }
+    0% { color: #FAFFFD; }
+    100% { color: #FA824C; }
 }
 
 @keyframes brand-color-change
 {
-  0% { color: #878C8F; }
+  0% { color: #FAFFFD; }
   100% { color: rgba(255, 255, 255, 0); }
 }
 
