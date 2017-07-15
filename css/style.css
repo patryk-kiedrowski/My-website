@@ -4,9 +4,17 @@
   JUNE BUD - #9FD356
   CORAL - #FA824C
   WHITE - #FAFFFD
+
+  #232E37
+  #56B3FF
+  #A2D5FF
+  #2B597F
+  #82ABCC
 */
 
 /* DO ZROBIENIA
+- wycentrować materiał na landing-page'u względem 100vh
+
 - może na tło dać linie kodu idące ukośno, dużo rzadziej niż ma to miejsce teraz
 - zamienic animation na transition, żeby kolor stopniowo wracał po końcu hovera
 
@@ -21,25 +29,37 @@ body
 
 #container
 {
+  padding-top: 0px;
   /*background-color: #60AFFF;*/
   /*background-image: url("../img/background-pattern.png");*/
-  height: 900px;
   /*background: linear-gradient(to bottom right,#3C91E6 ,#73A9C2);*/
-  background: linear-gradient(to bottom right, #342E37, #3C91E6, #FA824C, #9FD356);
-  background: linear-gradient(to top right, #232E37, #2B597F, #56B3FF);
+  /*background: linear-gradient(to bottom right, #342E37, #3C91E6, #FA824C, #9FD356);*/
+  /*background: linear-gradient(to top left, #232E37, #2B597F, #56B3FF);*/
+}
+
+#landing-page
+{
+  margin: 0;
+  padding-top: 120px;
+  background: linear-gradient(to top left, #232E37, #2B597F, #56B3FF);
+  min-height: 100vh;
 }
 
 .container-fluid
 {
   width: 1180px;
+  height: 50px;
+  padding: 0;
 }
 
 .navbar-default
 {
   background-color: #232E37;
+  background-color: rgba(35,46,55,0.8);
   border: none;
   border-radius: 0;
   box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+  height: 50px;
 }
 
 .navbar-default .navbar-nav>li>a
@@ -74,23 +94,23 @@ body
 .blue-hover
 {
   color: #FAFFFD;
+  transition: ease-in-out 1s;
 }
 
 .navbar-default .navbar-brand
 {
   color: #FAFFFD;
+  transition: ease-in-out 1s;
 }
 
 .navbar-default .navbar-brand:hover
 {
   color: rgba(255, 255, 255, 0);
-  animation: brand-color-change 1s;
 }
 
 .navbar-default .navbar-brand:hover .blue-hover
 {
   color: #56B3FF;
-  animation: color-change 1s;
 }
 
 .nav
@@ -102,10 +122,43 @@ body
 }
 
 
-#container>.row
+.jumbotron
 {
-  margin-top: 50px;
-  padding-top: 200px;
+  width: 1180px;
+  background-color: rgba(0,0,0,0);
+  margin-left: auto;
+  margin-right: auto;
+  text-align; center;
+  padding: 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron>.jumbo-header
+{
+  margin: 0 auto 80px auto;
+  width: 366.66px;
+  text-align: center;
+  color: #2B597F;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.jumbo-header-span
+{
+  color: #82ABCC;
+  transition: all ease-in-out 0.5s;
+}
+
+.jumbo-header:hover .jumbo-header-span
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#container>#landing-page>.row
+{
+  margin-top: 0px;
+  padding-top: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 1180px;
@@ -181,6 +234,12 @@ body
 {
   margin-top: 27px;
   margin-bottom: 27px;
+}
+
+
+#about-me
+{
+  min-height: 1000px;
 }
 
 @keyframes color-change
